@@ -186,30 +186,18 @@ template {
   clip: rect(0 0 0);
   overflow: hidden; }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  color: #171717;
-  font-size: 50px;
-  text-transform: uppercase; }
+html {
+  font-size: 62.5%; }
 
-h2 {
-  font-family: 'Oswald', sans-serif;
-  color: #171717;
-  font-size: 25px;
-  text-transform: uppercase; }
-
-h3 {
-  font-family: 'Cabin', sans-serif;
-  color: #171717;
-  font-size: 16px; }
+body {
+  font-size: 2rem; }
 
 .wrapper {
   max-width: 1280px;
   width: 80%; }
 
-body {
-  background: #b9dde7; }
-
-h1 {
-  text-align: center;
-  font-size: 80px; }
+.body-text {
+  font-family: "Cabin", sans-serif;
+  color: #171717;
+  font-size: 2rem;
+  line-height: 32px; }

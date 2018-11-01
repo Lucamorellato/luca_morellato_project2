@@ -1,49 +1,36 @@
 // VARIABLES
 $black: #171717;
 $white: #f6f6f6;
-$accent-color: #f38d8d;
-$secondary-color-blue: #68b0c1;
-$secondary-color-dblue: #227284;
-$secondary-color-lblue: #b9dde7; 
+$main-color: #b9dde7; 
+$button-color: #f38d8d;
+$accent1: #68b0c1;
+$accent2: #227284;
+$primary-font:  'Oswald', sans-serif;
+$secondary-font:  'Cabin', sans-serif;
 
 
 
-@mixin primary-font($size) {
-    font-family: 'Oswald', sans-serif;
+
+@mixin header-text($size) {
+    font-family: $primary-font;
     color: $black;
-    font-size: $size;
+    font-size: $size*1px;
+    font-size: ($size/10) * 1rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-@mixin secondary-font($size) {
-    font-family: 'Cabin', sans-serif;
-    color: $black;
-    font-size: $size;
-}
 
-h1 {
-    @include primary-font(50px);
-}
-
-h2 {
-    @include primary-font(25px);
-}
-
-h3 {
-    @include secondary-font(16px);
-}
 
 .wrapper {
     max-width: 1280px;
     width: 80%;
 }
 
-body {background: $secondary-color-lblue;}
-
-h1 {
-    text-align: center;
-    font-size: 80px;
+.body-text {
+    font-family: $secondary-font;
+    color: $black;
+    font-size: 2rem;
+    line-height: 32px;
 }
-
-
 
