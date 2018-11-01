@@ -8,29 +8,46 @@ $accent2: #227284;
 $primary-font:  'Oswald', sans-serif;
 $secondary-font:  'Cabin', sans-serif;
 
-
-
-
+// MIXINS
 @mixin header-text($size) {
-    font-family: $primary-font;
-    color: $black;
-    font-size: $size*1px;
-    font-size: ($size/10) * 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-family: $primary-font;
+  color: $black;
+  font-size: $size*1px;
+  font-size: ($size/10) * 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-
-
+// GLOBAL STYLES
 .wrapper {
-    max-width: 1280px;
-    width: 80%;
+  max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+}
+.header {
+	@include header-text(20);
+}
+.copy-text {
+  font-family: $secondary-font;
+  color: $black;
+  font-size: 2rem;
+  line-height: 32px;
 }
 
-.body-text {
-    font-family: $secondary-font;
-    color: $black;
-    font-size: 2rem;
-    line-height: 32px;
+.btn  {
+  font-family: $primary-font;
+	padding: 20px 40px;
+	background: $button-color;
+	color: $black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+.btn:hover {
+	background: $black;
+	color: $button-color;
+	transition: all .5s;
+}
+
 

@@ -192,12 +192,47 @@ html {
 body {
   font-size: 2rem; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .wrapper {
   max-width: 1280px;
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
-.body-text {
+.header {
+  font-family: "Oswald", sans-serif;
+  color: #171717;
+  font-size: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.copy-text {
   font-family: "Cabin", sans-serif;
   color: #171717;
   font-size: 2rem;
   line-height: 32px; }
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  padding: 20px 40px;
+  background: #f38d8d;
+  color: #171717;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+.btn:hover {
+  background: #171717;
+  color: #f38d8d;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }

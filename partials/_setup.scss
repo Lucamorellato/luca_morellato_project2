@@ -9,7 +9,16 @@
 html {
     font-size: 62.5%;
 }
-
 body {
     font-size: 2rem;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
