@@ -203,7 +203,7 @@ a {
   text-decoration: none; }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1600px;
   width: 80%;
   margin: 0 auto; }
 
@@ -244,11 +244,11 @@ a {
   color: #171717;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.btn:hover {
-  background: #171717;
-  color: #f38d8d;
+  letter-spacing: 1px;
   -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s; }
+
+.btn:hover {
+  background: #171717;
+  color: #f38d8d; }
