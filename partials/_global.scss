@@ -24,15 +24,15 @@ $secondary-font:  'Cabin', sans-serif;
 	width: 80%;
 	margin: 0 auto;
 }
-.main-header {
+.main-heading {
 	@include header-text(80);
 }
 
-.section-header {
+.section-heading {
 	@include header-text(42);
 }
 
-.content-header {
+.content-heading {
 	@include header-text(32)
 }
 
@@ -52,7 +52,7 @@ $secondary-font:  'Cabin', sans-serif;
   text-align: center;
   text-transform: uppercase;
 	letter-spacing: 1px;
-	transition: all .5s;
+	transition: all .2s;
 }
 
 .btn:hover {

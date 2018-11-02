@@ -207,7 +207,7 @@ a {
   width: 80%;
   margin: 0 auto; }
 
-.main-header {
+.main-heading {
   font-family: "Oswald", sans-serif;
   color: #171717;
   font-size: 80px;
@@ -215,7 +215,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.section-header {
+.section-heading {
   font-family: "Oswald", sans-serif;
   color: #171717;
   font-size: 42px;
@@ -223,7 +223,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
-.content-header {
+.content-heading {
   font-family: "Oswald", sans-serif;
   color: #171717;
   font-size: 32px;
@@ -245,10 +245,49 @@ a {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s; }
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s; }
 
 .btn:hover {
   background: #171717;
   color: #f38d8d; }
+
+.header__nav {
+  background: #b9dde7; }
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__link {
+  padding: 10px 40px;
+  font-family: "Oswald", sans-serif;
+  color: #171717;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: color .2s;
+  -o-transition: color .2s;
+  transition: color .2s; }
+  .header__link:hover {
+    color: #4a4a4a; }
+  .header__link--active {
+    color: #f6f6f6; }
+
+.header__item--title {
+  padding: 0 50px; }
+
+.footer {
+  background: #171717; }
+  .footer__text {
+    color: #f6f6f6;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; }
