@@ -237,6 +237,10 @@ a {
   font-size: 2rem;
   line-height: 32px; }
 
+.img {
+  width: 100%;
+  display: block; }
+
 .btn {
   font-family: "Oswald", sans-serif;
   padding: 20px 40px;
@@ -253,36 +257,35 @@ a {
   background: #171717;
   color: #f38d8d; }
 
-.header__nav {
+.nav {
   background: #b9dde7; }
-
-.header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.header__link {
-  padding: 10px 40px;
-  font-family: "Oswald", sans-serif;
-  color: #171717;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: color .2s;
-  -o-transition: color .2s;
-  transition: color .2s; }
-  .header__link:hover {
-    color: #4a4a4a; }
-  .header__link--active {
-    color: #f6f6f6; }
-
-.header__item--title {
-  padding: 0 50px; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .nav__link {
+    padding: 10px 40px;
+    font-family: "Oswald", sans-serif;
+    color: #171717;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s; }
+    .nav__link:hover {
+      color: #4a4a4a; }
+    .nav__link--active {
+      color: #f6f6f6; }
+      .nav__link--active:hover {
+        color: #f6f6f6; }
+  .nav__item--title {
+    padding: 0 50px; }
 
 .footer {
   background: #171717; }

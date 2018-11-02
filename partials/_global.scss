@@ -9,7 +9,7 @@ $primary-font:  'Oswald', sans-serif;
 $secondary-font:  'Cabin', sans-serif;
 
 // MIXINS
-@mixin header-text($size) {
+@mixin heading-text($size) {
   font-family: $primary-font;
   color: $black;
   font-size: $size*1px;
@@ -24,16 +24,17 @@ $secondary-font:  'Cabin', sans-serif;
 	width: 80%;
 	margin: 0 auto;
 }
+
 .main-heading {
-	@include header-text(80);
+	@include heading-text(80);
 }
 
 .section-heading {
-	@include header-text(42);
+	@include heading-text(42);
 }
 
 .content-heading {
-	@include header-text(32)
+	@include heading-text(32)
 }
 
 
@@ -42,6 +43,11 @@ $secondary-font:  'Cabin', sans-serif;
   color: $black;
   font-size: 2rem;
   line-height: 32px;
+}
+
+.img {
+  width: 100%;
+  display: block;
 }
 
 .btn  {
