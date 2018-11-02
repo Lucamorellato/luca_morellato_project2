@@ -24,9 +24,19 @@ $secondary-font:  'Cabin', sans-serif;
 	width: 80%;
 	margin: 0 auto;
 }
-.header {
-	@include header-text(20);
+.main-header {
+	@include header-text(80);
 }
+
+.section-header {
+	@include header-text(42);
+}
+
+.content-header {
+	@include header-text(32)
+}
+
+
 .copy-text {
   font-family: $secondary-font;
   color: $black;
