@@ -338,14 +338,6 @@ a {
     padding: 10px 0;
     margin: 0; }
 
-.bio__banner {
-  background: url(assets/home-image-2.jpg);
-  width: 100%;
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%; }
-
 .links {
   background: #f6f6f6; }
 
@@ -446,26 +438,119 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between; }
 
-.header__hero {
-  background: url(assets/blog-image-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50vh;
-  width: 100%;
+.header {
+  height: 50vh; }
+  .header__hero {
+    background: url(assets/blog-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative; }
+    .header__hero--alternate {
+      background: url(assets/contact-image-1.jpg); }
+  .header__text {
+    position: absolute;
+    margin: 0 0 0 200px;
+    font-size: 8rem;
+    bottom: -30px; }
+
+.blog-contact__main {
+  background: #f6f6f6; }
+
+.main--secondary {
+  padding: 200px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  position: relative; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
-.header__text {
-  position: absolute;
-  margin: 0 0 0 75px;
-  font-size: 8rem;
-  bottom: -30px; }
+.main__content {
+  -webkit-box-flex: 2;
+  -ms-flex: 2 1 500px;
+  flex: 2 1 500px; }
 
-.secondary-main {
-  background: #f6f6f6; }
+.main__article, .main__comment-section {
+  padding: 30px 50px;
+  border-bottom: 10px solid #227284; }
+
+.main__article {
+  background: white; }
+
+.main__comment-section {
+  margin-top: 50px;
+  padding: 0; }
+
+.main__aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
+  margin-right: 50px; }
+
+.main__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 50px; }
+  .main__comment__img {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 20px; }
+  .main__comment--one {
+    margin-bottom: 25px;
+    background: white; }
+  .main__comment--two {
+    background: white; }
+
+.article__heading {
+  margin-top: 0; }
+
+.article__content--last {
+  padding-bottom: 50px; }
+
+.aside__about-harper {
+  background: white;
+  padding: 40px; }
+
+.aside__list {
+  background: white;
+  padding: 30px 30px 50px 30px;
+  margin-top: 50px; }
+
+.aside__ul {
+  padding: 0 20px; }
+
+.aside__item {
+  list-style: disc;
+  padding: 5px 10px; }
+
+.aside__link {
+  color: #171717; }
