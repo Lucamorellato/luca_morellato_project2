@@ -73,6 +73,19 @@
 						</div>
 					</div>
 				</div>
+				<form action="#sendEmail.php" method="POST" class="main__form form" autocomplete="off" name="Form">
+					<div class="main__form--top">
+						<label class="visuallyhidden" for="name">Please submit name to comment</label>
+						<input class="main__form--top--input" type="name" placeholder="Name" id="name">
+						<label class="visuallyhidden" for="email">Please enter email to comment</label>
+						<input type="email" class="main__form--top--input" name="email" required id="email" placeholder="Email address">
+					</div>
+					<div class="main__form main__form--bottom">
+						<label class="visuallyhidden" for="comment">Please enter comment</label>
+						<textarea class=" id="comment" name="comment" placeholder="Comment" class="""></textarea>
+						<button class="main__form--bottom btn">Post comment</button>
+					</div>
+				</form>
 			</section>
 			<aside class="main__aside">
 				<div class="aside__about-harper">
