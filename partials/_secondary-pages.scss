@@ -118,15 +118,15 @@
 
 // FORM STYLES
 .main__form {
-    margin-top: 50px;
     
     &--top {
+        margin-top: 50px;
+        margin-bottom: 25px;
         display: flex;
         justify-content: space-between;
-         margin-bottom: 25px;
          
         &--input {
-            height: 50px;
+            height: 75px;
             padding-left: 20px;
             width: 48%;
         }
@@ -141,12 +141,19 @@
     input {
         border: none;
     }
-    input:focus {
-        border: 2px solid $accent2;
+    input:focus, textarea:focus {
+        outline-style: solid;
+        outline-color: $button-color;
     }
 
     textarea {
-        
+        width: 100%;
+        min-height: 200px;
+        margin-bottom: 25px;
+        padding: 15px 0 0 15px;
+        line-height: 1;
+        border: none;
+        resize: none;
     }
 }
 
