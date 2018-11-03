@@ -1,0 +1,108 @@
+// BIO STYLES
+
+.bio {
+
+	&__banner {
+		background: url(assets/home-image-2.jpg);
+		width: 100%;
+		height: 50vh;
+		background-repeat: no-repeat;
+	 	background-position: center;
+		background-size: 100%;
+	}
+}
+
+// LINKS SECTION STYLES
+.links {
+	background: $white;
+}
+
+// BLOG STYLES
+.tiles {
+		margin: 50px 0;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	&__container {
+		display: flex;
+		&--lower {
+			flex-direction: row-reverse;
+		}
+	}
+	&__image {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		&--upper {
+			box-shadow: 20px 20px $accent2, -200px 20px $accent2;
+			position: absolute;
+		}
+		&--lower {
+			box-shadow: -20px 20px $accent1, 200px 20px $accent1;
+			position: absolute;
+		}
+	}
+	&__content {
+		width: 50%;
+		padding: 10px;
+		&--upper {
+			
+		}
+	}
+
+}
+
+// STORY STYLES
+.story {
+    background: $white;
+    
+    &__wrapper {
+        padding: 100px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+				box-shadow: 20px 20px $accent2;
+				flex: 1 0 250px;
+    }
+
+    &__container {
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 60%;
+
+        .btn {
+            width: 220px;
+        }
+    }
+}
+
+// GALLERY STYLES
+.gallery {
+
+    margin: 75px 0;
+
+    &__img {
+        width: calc(33.3% - 20px);
+        margin-right: 20px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
