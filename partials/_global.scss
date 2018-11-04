@@ -67,12 +67,23 @@ $secondary-font:  'Cabin', sans-serif;
 	color: $button-color;
 }
 
-@media only screen and (max-width: 768px) {
-.wrapper {
-	width: 90%;
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .copy-text {
+    font-size: 1.8rem;
+  }
+
+
 }
 
-
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    width: 95%;
+  }
 }
 
 
