@@ -23,6 +23,8 @@
     }
 }
 
+
+
 // MAIN SECTION STYLES
 .blog-contact__main {
     background: $white;
@@ -185,3 +187,29 @@
     padding: 10px;
 }
 
+
+// MEDIA QUERRIES 
+
+@media only screen and (max-width: 768px) {
+    .header {
+        height: 25vh;
+        &__hero {
+            height: 25vh;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text {
+            position: static;
+            margin: 0 auto;
+        }
+    }
+
+	.main--secondary {
+   	flex-direction: column;
+		}
+
+
+	.main__aside {
+		width: 100%;
+	}
+}
