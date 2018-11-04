@@ -12,17 +12,19 @@
 	background: $white;
 }
 
-// BLOG STYLES
+// TILES STYLES
 .tiles {
-		margin: 50px 0;
+		// margin: 50px 0;
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
 	}
 	&__container {
 		display: flex;
+		
 		&--lower {
 			flex-direction: row-reverse;
+			margin-top: 50px;
 		}
 	}
 	&__image {
@@ -33,21 +35,26 @@
 		position: relative;
 		&--upper {
 			box-shadow: 20px 20px $accent2, -200px 20px $accent2;
-			position: absolute;
+			position: relative;
 		}
 		&--lower {
 			box-shadow: -20px 20px $accent1, 200px 20px $accent1;
-			position: absolute;
+			position: relative;
 		}
 	}
 	&__content {
 		width: 50%;
-		padding: 10px;
 		&--upper {
+			margin-top: auto;
 			
 		}
+		&--bottom {
+			margin-bottom: auto;
+		}
 	}
-
+	&__header--bottom {
+		margin-top: 0;
+	}
 }
 
 // STORY STYLES

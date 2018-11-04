@@ -39,8 +39,54 @@
 	</header>
 		<!-- END OF HEADER -->
 	<main class="blog-contact__main">
+
+		<!-- wrapper -->
 		<div class="wrapper main--secondary">
 
+			<!-- MAIN COLUMN/SECTION -->
+			<section class="main__content">
+
+				<!-- CONTACT FORM -->
+				<form action="#sendEmail.php" method="POST" class="main__form form" autocomplete="off" name="Form">
+					<div class="main__form--top">
+						<label class="visuallyhidden" for="name">Please submit name to comment</label>
+						<input class="main__form--top--input" type="name" placeholder="Name" id="name">
+						<label class="visuallyhidden" for="email">Please enter email to comment</label>
+						<input type="email" class="main__form--top--input" name="email" required id="email" placeholder="Email address">
+					</div>
+					<div class="main__form main__form--bottom">
+						<label class="visuallyhidden" for="message">Please enter your Email</label>
+						<textarea class="" id="message" name="comment" placeholder="Message" class="""></textarea>
+						<button class="
+						 main__form--bottom btn">Submit</button>
+					</div>
+				</form>
+			</section>
+
+			<!-- SIDEBAR STARTS -->
+			<aside class="main__aside">
+				<div class="aside">
+					<ul class="aside__list--contact">
+						<li class="aside__list-item">
+							<a href="#"><i aria-hidden class="fab fa-facebook-f"></i><span class="visuallyhidden">link to our facebook</span></a>
+						</li>
+						<li class="aside__list-item">
+							<a href="#"><i aria-hidden class="fab fa-twitter"></i><span class="visuallyhidden">link to our twitter</span></a>
+						</li>
+						<li class="aside__list-item">
+							<a href="#"><i aria-hidden class="fab fa-linkedin-in"></i><span class="visuallyhidden">link to our linkedin</span></a>
+						</li>
+						<li class="aside__list-item">
+							<a href="#"><i aria-hidden class="fab fa-instagram"></i><span class="visuallyhidden">link to our instagram</span></a>
+						</li>
+					</ul>
+					<p class="aside__heading content-heading">info@email.com</p>
+					<p class="aside__text--contact copy-text">123 - 456 - 7890</p>
+					<p class="aside__text--contact copy-text">123 Queen Street West, Unit 10</p>
+					<p class="aside__text--contact copy-text">Toronto, Ontario</p>
+					<p class="aside__text--contact copy-text">M5V2D5</p>
+				</div>
+			</aside>
 		</div>
 	</main>>
 
