@@ -55,7 +55,7 @@
     &__aside {
         display: flex;
         flex-direction: column;
-        flex: 0 0 300px;
+        flex: 0 0 325px;
         margin-right: 50px;
     }
     &__comment {
@@ -79,6 +79,7 @@
         }
         &--two {
             background: white;
+            margin-top: none;
         }
     }
 }   
@@ -119,24 +120,23 @@
 .main__form {
     
     &--top {
-        margin-top: 50px;
         margin-bottom: 25px;
         display: flex;
-        justify-content: space-between;
-         
+        justify-content: space-between;  
         &--input {
             height: 75px;
             padding-left: 20px;
             width: 48%;
         }
     }
+    &--top1 {
+        margin-top: 50px;
+    }
     &--bottom {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-
     input {
         border: none;
     }
@@ -144,7 +144,6 @@
         outline-style: solid;
         outline-color: $button-color;
     }
-
     textarea {
         width: 100%;
         min-height: 200px;
@@ -158,11 +157,31 @@
 
 // CONTACT PAGE STYES
 
+.aside {
 
-.aside__contact-info {
-    background: white;
-    padding: 40px;
+    &__list--contact {
+        display: flex;
+    }
+    &__list-item {
+        margin-right: 20px;
+    }
+    &__contact {
+        background: white;
+        padding: 30px;
+    }
+    &__heading--contact {
+        font-size: 2.2rem;
+        text-transform: lowercase;
+    }
+    &__text--contact {
+        font-size: 1.7rem;
+        margin: 0;
+    }
 }
 
-.aside__ {
-padding: 40px;}
+.fab {
+    color: $accent2;
+    font-size: 3rem;
+    padding: 10px;
+}
+

@@ -20,7 +20,7 @@
     transition: color .2s;
 
         &:hover {
-            color: lighten($black, 20);
+            color: $button-color;
         }
         &--active {
             color: $white;
