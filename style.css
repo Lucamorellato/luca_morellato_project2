@@ -353,7 +353,7 @@ a {
   .bio__text {
     margin: 50px 0; }
   .bio__banner {
-    background: #f6f6f6;
+    background: url(assets/home-image-2.jpg) no-repeat;
     margin: 50px 0; }
 
 .links {
