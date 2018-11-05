@@ -2,34 +2,36 @@
 // HEADER STYLES
 .header {
     background: $main-color;
-    height: 70vh;
+    height: 80vh;
+    background: $main-color;
     &__wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
     }
     &__img-container {
-        display: flex;
-        flex-grow: 1;
+        width: 40%;
     }
     &__hero-text-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 60%;
     }
     &__hero-text {
         margin-left: 100px;
+        position: relative;
+        &:after {
+            content: "";
+            background: url(assets/circle-text.png);
+            width: 182px;
+            height: 172px;
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            bottom: 20px
+        }
     }
     &__img {
         margin-right: 100px;
         box-shadow: 20px 20px white;
-        &:after {
-            content: "";
-            background: url(assets/circle-text.png);
-            width: 150px;
-            height: 150px;
-            display: inline-block;
-        }
     }
 }
 

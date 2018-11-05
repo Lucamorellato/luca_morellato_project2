@@ -1,8 +1,23 @@
 // BIO STYLES
 
 .bio {
+	background: $white;
+	margin: 150px 0;
+	&__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__content {
+		width: 60%;
+		padding-left: 50px 0;
+	}
+	&__text {
+		margin: 50px 0;
+	}
 
 	&__banner {
+		background: $white;
+		margin: 50px 0;
 	
 	}
 }

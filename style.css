@@ -264,10 +264,6 @@ a {
   .copy-text {
     font-size: 1.8rem; } }
 
-@media only screen and (max-width: 400px) {
-  .wrapper {
-    width: 95%; } }
-
 .nav {
   background: #b9dde7; }
   .nav__list {
@@ -300,7 +296,8 @@ a {
 
 .header {
   background: #b9dde7;
-  height: 70vh; }
+  height: 80vh;
+  background: #b9dde7; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -312,34 +309,25 @@ a {
     -ms-flex-align: center;
     align-items: center; }
   .header__img-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
+    width: 40%; }
   .header__hero-text-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
+    width: 60%; }
   .header__hero-text {
-    margin-left: 100px; }
+    margin-left: 100px;
+    position: relative; }
+    .header__hero-text:after {
+      content: "";
+      background: url(assets/circle-text.png);
+      width: 182px;
+      height: 172px;
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      bottom: 20px; }
   .header__img {
     margin-right: 100px;
     -webkit-box-shadow: 20px 20px white;
     box-shadow: 20px 20px white; }
-    .header__img:after {
-      content: "";
-      background: url(assets/circle-text.png);
-      width: 150px;
-      height: 150px;
-      display: inline-block; }
 
 .footer {
   background: #171717; }
@@ -348,6 +336,25 @@ a {
     text-align: center;
     padding: 10px 0;
     margin: 0; }
+
+.bio {
+  background: #f6f6f6;
+  margin: 150px 0; }
+  .bio__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .bio__content {
+    width: 60%;
+    padding-left: 50px 0; }
+  .bio__text {
+    margin: 50px 0; }
+  .bio__banner {
+    background: #f6f6f6;
+    margin: 50px 0; }
 
 .links {
   background: #f6f6f6; }
