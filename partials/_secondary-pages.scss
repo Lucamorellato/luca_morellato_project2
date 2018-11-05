@@ -12,7 +12,9 @@
 		align-items: flex-end;
 		position: relative;
         &--alternate {
-            background: url(assets/contact-image-1.jpg);
+			background: url(assets/contact-image-1.jpg);
+			background-position: center;
+			background-size: cover;
         }
     }
     &__text {
@@ -356,7 +358,7 @@
 		&__list--mobile {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-evenly;
+			justify-content: center;
 		}
 	}
 	.article__heading {

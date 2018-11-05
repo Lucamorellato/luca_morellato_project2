@@ -295,10 +295,9 @@ a {
     padding: 0 50px; }
 
 .header {
-  background: #b9dde7;
-  height: 80vh;
   background: #b9dde7; }
   .header__wrapper {
+    background: #b9dde7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -320,10 +319,10 @@ a {
       background: url(assets/circle-text.png);
       width: 182px;
       height: 172px;
-      display: inline-block;
-      position: absolute;
-      right: 20px;
-      bottom: 20px; }
+      display: block;
+      position: relative;
+      left: 300px;
+      bottom: 200px; }
   .header__img {
     margin-right: 100px;
     -webkit-box-shadow: 20px 20px white;
@@ -338,8 +337,7 @@ a {
     margin: 0; }
 
 .bio {
-  background: #f6f6f6;
-  margin: 150px 0; }
+  background: #f6f6f6; }
   .bio__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -352,12 +350,43 @@ a {
     padding-left: 50px 0; }
   .bio__text {
     margin: 50px 0; }
+  .bio__img {
+    width: 100%; }
   .bio__banner {
-    background: url(assets/home-image-2.jpg) no-repeat;
-    margin: 50px 0; }
+    background: url(assets/home-image-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh; }
 
 .links {
-  background: #f6f6f6; }
+  background: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0; }
+  .links__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .links__item {
+    width: 50%;
+    padding: 20px; }
+  .links__text {
+    padding: 20px 0;
+    margin: 0 0 0 75px; }
+  .links__anchor.fas {
+    margin-right: 25px; }
+  .links .fas {
+    text-align: center;
+    margin-right: 20px;
+    color: #171717;
+    background: #b9dde7;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding-top: 13px; }
 
 .tiles__wrapper {
   display: -webkit-box;
@@ -480,7 +509,9 @@ a {
     align-items: flex-end;
     position: relative; }
     .header__hero--alternate {
-      background: url(assets/contact-image-1.jpg); }
+      background: url(assets/contact-image-1.jpg);
+      background-position: center;
+      background-size: cover; }
   .header__text {
     position: absolute;
     margin: 0 0 0 200px;
@@ -825,8 +856,8 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .article__heading {
     font-size: 3.5rem; } }

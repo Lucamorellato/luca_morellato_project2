@@ -2,9 +2,8 @@
 // HEADER STYLES
 .header {
     background: $main-color;
-    height: 80vh;
-    background: $main-color;
     &__wrapper {
+        background: $main-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -23,10 +22,10 @@
             background: url(assets/circle-text.png);
             width: 182px;
             height: 172px;
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            bottom: 20px
+            display: block;
+            position: relative;
+            left: 300px;
+            bottom: 200px;
         }
     }
     &__img {
