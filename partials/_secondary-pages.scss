@@ -119,6 +119,9 @@
 		 font-weight: bold;
 		 color: $accent2;
 	 }
+	 &__contact--mobile{
+		 display: none;
+	 }
 }
 
 // FORM STYLES
@@ -172,11 +175,14 @@
     }
     &__contact {
         background: white;
-        padding: 30px;
+		  padding: 30px;
+		  display: flex;
+		  flex-direction: column;
     }
     &__heading--contact {
         font-size: 2.2rem;
-        text-transform: lowercase;
+		  text-transform: lowercase;
+		  padding: 10px 0;
     }
     &__text--contact {
         font-size: 1.7rem;
@@ -184,7 +190,7 @@
     }
 }
 
-.fab {
+.fab, .fas {
     color: $accent2;
     font-size: 3rem;
     padding: 10px;
@@ -204,9 +210,9 @@
 	// landscape and smaller computers
 @media only screen and (max-width: 1024px) {
 	.header {
-		height: 30vh;
+		height: 40vh;
 		&__hero {
-			height: 30vh;
+			height: 40vh;
 			justify-content: center;
 			align-items: center;
 		}
@@ -219,7 +225,7 @@
 
 	.main--secondary {
 		flex-direction: column;
-		padding: 50px 0;
+		padding: 50px 0 0 0;
 		}
 
 
@@ -252,6 +258,17 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			margin-bottom: 25px;
+		}
+		&__contact {
+			width: 100%;
+			margin-bottom: 50px;
+			display: flex;
+			align-items: center;
+			li {
+				display: flex;
+				justify-content: center;
+			}
 		}
 	}
 
@@ -264,7 +281,8 @@
 	}
 	.aside{
 		&__list {
-			width: 100%;
+			width: 75%;
+			margin: 50px auto 25px auto;
 		}
 		&__about-harper {
 			width: 75%;
@@ -292,8 +310,15 @@
 		}
 		&__article{
 			padding: 30px 20px;
+			
 		}
 		&__comment{
+			flex-direction: column;
+			align-items: center;
+			padding: 30px 20px;
+			&__text {
+				padding: 0;
+			}
 			&--one {
 				border-bottom: 10px solid $accent2;
 			}
@@ -311,6 +336,7 @@
 		}
 		&__list {
 			padding: 20px;
+			width: 100%;
 		}
 		&__about-harper {
 			width: 100%;
@@ -319,5 +345,21 @@
 				width: 100%;
 			}
 		}
+		&__contact{
+			display: none;
+		}
+		&__contact--mobile{
+			background: white;
+			margin-top: 25px;
+			display: block;
+		}
+		&__list--mobile {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+	}
+	.article__heading {
+		font-size: 3.5rem;
 	}
 }
