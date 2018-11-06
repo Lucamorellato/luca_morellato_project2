@@ -3,10 +3,10 @@
     background: $main-color;
 
     &__list {
-    // width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     }
 
     &__link {
@@ -16,6 +16,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color .2s;
+    @media screen and (max-width: 980px) {
+        padding: 10px 20px;
+    }
+    @media screen and (max-width: 768px) {
+        // display: none;
+    }
 
         &:hover {
             color: $button-color;
@@ -25,11 +31,12 @@
             &:hover{
                 color: $white;
             }
-        }
-        
+        } 
     }
-
     &__item--title {
         padding: 0 50px;
+        @media screen and (max-width: 980px) {
+            padding: 0 25px;
+        }
     }
 } 

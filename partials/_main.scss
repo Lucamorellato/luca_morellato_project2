@@ -8,10 +8,14 @@
 	}
 	&__content {
 		width: 60%;
-		padding: 50px 0 100px 50px;
+		padding: 75px 0 100px 50px;
+		@media screen and (max-width: 950px) {
+			width: 100%;
+			padding: 50px 0;
+    	}
 	}
 	&__text {
-		margin: 50px 0;
+		margin: 0 0 50px 0;
 	}
 	&__img {
 		width: 100%;
@@ -23,6 +27,9 @@
 		background-size: cover;
 		background-position: center;
 		height: 50vh;
+		@media screen and (max-width: 768px) {
+			height: 25vh;
+    	}
 	}
 }
 
@@ -31,18 +38,34 @@
 	background: $white;
 	display: flex;
 	padding: 100px 0;
+	@media screen and (max-width: 575px) {
+		flex-direction: column;
+		padding-top: 50px;
+    }
 
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
+		@media screen and (max-width: 575px) {
+			flex-direction: column;
+    	}
 	}
 	&__item {
 		width: 50%;
 		padding: 20px;
+		@media screen and (max-width: 758px) {
+			padding: 20px 0;
+		}
+		@media screen and (max-width: 575px) {
+			width: 100%;
+    	}
 	}
 	&__text {
 		padding: 20px 0;
 		margin: 0 0 0 75px;
+		@media screen and (max-width: 768px) {
+			display: none;
+    	}
 	}
 	&__anchor{
 		&:hover {
@@ -63,7 +86,6 @@
 		height: 60px;
 		padding-top: 13px;
 	}
-	
 }
 
 // TILES STYLES
@@ -74,30 +96,50 @@
 	}
 	&__container {
 		display: flex;
-
-		
+		@media screen and (max-width: 980px) {
+			flex-direction: column;
+    	}
 		&--lower {
 			flex-direction: row-reverse;
-			// margin-top: 25px;
+			@media screen and (max-width: 980px) {
+				flex-direction: column;
+    		}
 		}
 	}
 	&__image-container {
 		width: 50%;
 		position: relative;
+		@media screen and (max-width: 980px) {
+			width: 75%;
+			position: static;
+    	}
 	}
 	&__image--upper {
 		box-shadow: 20px 20px $accent1, -200px 20px $accent1;
 		position: relative;
 		bottom: 30px;
+		@media screen and (max-width: 980px) {
+			position: static;
+    	}
 	}
 	&__image--lower {
 		box-shadow: 20px 20px $main-color, 200px 20px $main-color;
 		position: relative;
 		top: 30px;
+		@media screen and (max-width: 980px) {
+			
+			left: 75px;
+			top: 0;
+
+    	}
 	}
 	&__content {
 		width: 50%;
 		align-items: flex-start;
+		@media screen and (max-width: 980px) {
+			width: 100%;
+    	}
+		
 		&--upper {
 			padding: 0 0 0 75px;
 			display: flex;

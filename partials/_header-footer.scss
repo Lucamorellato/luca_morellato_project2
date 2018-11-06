@@ -6,17 +6,19 @@
         background: $main-color;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  
     }
     &__img-container {
         width: 40%;
+        position: relative;
+        top: 50px;
     }
     &__hero-text-container {
-        width: 60%;
+        width: 55%; 
     }
     &__hero-text {
-        margin-left: 100px;
-        position: relative;
+        padding-top: 200px;
+        margin: 0 0 0 100px;
         &:after {
             content: "";
             background: url(assets/circle-text.png);
@@ -31,6 +33,7 @@
     &__img {
         margin-right: 100px;
         box-shadow: 20px 20px white;
+
     }
 }
 
