@@ -59,7 +59,7 @@ $secondary-font:  'Cabin', sans-serif;
   text-align: center;
   text-transform: uppercase;
 	letter-spacing: 1px;
-  transition: all .2s;
+  transition: color .2s, background .2s;
   border: none;
   @media screen and (max-width: 400px) {
         font-size: 1.8rem;

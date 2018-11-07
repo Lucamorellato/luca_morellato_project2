@@ -1,26 +1,21 @@
 
 // HEADER STYLES
 .main-header {
-    background: $main-color;
-    @media screen and (max-width: 768px) {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-    }
-    &__wrapper {
-        background: $main-color;
-        display: flex;
-        align-items: center;
-        @media screen and (max-width: 980px) {
-            justify-content: center;
-            align-items: flex-start;
-        }  
-        @media screen and (max-width: 768px) {
-            justify-content: center;
-            align-items: center;
-        }
-    }
+	background: $main-color;
+	 
+   &__wrapper {
+      background: $main-color;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 980px) {
+         justify-content: center;
+         align-items: flex-start;
+      }  
+      @media screen and (max-width: 768px) {
+         justify-content: center;
+         align-items: center;
+      }
+   }
     &__img-container {
         width: 40%;
         position: relative;
@@ -57,7 +52,7 @@
             background: url(assets/circle-text.png);
             width: 182px;
             height: 172px;
-            display: inline-block;
+            display: block;
             position: relative;
             background-repeat: no-repeat;
             background-size: cover;
@@ -80,10 +75,12 @@
         }
     }
 }
+
+// MOBILEHEADER STYLES
 .mobile-header {
     display: none;
     margin: 0 auto;
-    padding: 25vh 0;
+    padding: 30vh 0;
     // display: flex;
     @media screen and (max-width: 768px) {
         display: flex;

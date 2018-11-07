@@ -15,6 +15,9 @@
 		@media screen and (max-width: 950px) {
 			width: 100%;
 			padding: 50px 0;
+		}
+		@media screen and (max-width: 550px) {
+			text-align: center;
     	}
 	}
 	&__text {
@@ -23,7 +26,6 @@
 	&__img {
 		width: 100%;
 	}
-
 	&__banner {
 		background: 
 		url(assets/home-image-2.jpg);

@@ -49,7 +49,6 @@
     position: relative;
     margin: 0 auto;
 
-
     &__list{
         background: darken($white, 10);
         padding: 0; 
@@ -60,21 +59,26 @@
         justify-content: center;
         z-index: -10;
         width: 100%;
-        right: 2000px; 
+        right: 5000px;
         height: 100vh;
         margin: 0;
-        transition: all 0.3s;
+        transition: right 0.3s;
         @media screen and (max-width: 768px) {
-            z-index: 1;
+            z-index: 2;
         }
     }
     &__link {
+        font-size: 4.5rem;
+        border-bottom: 3px solid $black;
         display: block;
-        padding: 30px 50px;
-        transition: all .3s;
+        padding: 25px 30px;
+        &:active {
+            text-shadow: 1px 1px $button-color, 2px 2px $button-color;
+        }
     }
     &__input[type="checkbox"] {
-	    display: none;  
+        display: none;  
+        transition: right 0.3s;
     }
     &__input[type="checkbox"]:checked + &__list {
         right: 0;
@@ -84,9 +88,9 @@
         @media screen and (max-width: 768px) {
             display: flex;
             font-size: 3rem;
-            position: relative;
+            position: absolute;
             color: $black;
-            padding: 25px 25px;
+            padding: 20px 25px;
             z-index: 10;
         }
     }

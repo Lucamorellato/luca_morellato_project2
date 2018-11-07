@@ -171,12 +171,10 @@
 
 // CONTACT PAGE SPECIFIC STYES
 
-
 .aside {
 
     &__list--contact {
 		display: flex;
-		// padding: 50px;
 	}
     &__list-item {
         margin-right: 20px;
@@ -201,7 +199,10 @@
 .fab, .fas {
     color: $accent2;
     font-size: 3rem;
-    padding: 10px;
+	padding: 10px;
+	&:hover {
+		color: $black;
+	}
 }
 
 
@@ -220,7 +221,7 @@
 	.header {
 		height: 40vh;
 		&__hero {
-			height: 40vh;
+			height: 50vh;
 			justify-content: center;
 			align-items: center;
 		}
@@ -231,16 +232,23 @@
 		}
 	}
 
-	.main--secondary {
-		flex-direction: column;
-		padding: 50px 0 0 0;
+	.main{
+		&__article {
+			margin-top: 50px;
 		}
-
-
-	.main__aside {
-		width: 100%;
-		display: block;
-	}
+		&--secondary {
+			flex-direction: column;
+			padding: 50px 0 0 0;
+			margin-top: 25px;
+			}
+		&__aside {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			margin-right: 0;
+			flex: 0 1 100%;
+			}
+		}
 
 	.blog-contact__main {
 		padding-top: 100px;
@@ -253,7 +261,7 @@
 		&__about-harper {
 			display: flex;
 			flex-direction: column;
-			width: 60%;
+			width: 40%;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
@@ -261,7 +269,7 @@
 		}
 		&__list {
 			display: flex;
-			width: 60%;
+			width: 50%;
 			flex-direction: column;
 			margin: 25px auto;
 		}
@@ -272,10 +280,9 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
-			// Safari Fix
-			a {
-				text-align: center;
-			}
+		}
+		&__text--contact {
+			text-align: center;
 		}
 		&__heading {
 			text-align: center;
@@ -365,7 +372,6 @@
 		}
 		&__contact--mobile{
 			background: white;
-			margin-top: 25px;
 			display: block;
 		}
 		&__list--mobile {
@@ -377,5 +383,12 @@
 	}
 	.article__heading {
 		font-size: 3.5rem;
+	}
+	.blog-contact__main {
+		padding-top: 25px;
+	}
+	.main__aside {
+		width: 100%;
+		display: block;
 	}
 }

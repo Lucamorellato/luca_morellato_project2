@@ -42,8 +42,7 @@
 				<li><a class="mobile-nav__link content-heading" href="blog.html">Blog</a></li>
 				<li><a class="mobile-nav__link content-heading" href="contact.html">Contact</a></li>
 			</ul>
-			<label class="mobile-nav__input-label" for="toggle"><i class="fa fa-bars"></i><span class="visuallyhidden">link open
-					mobile menu</span></label>
+			<label class="mobile-nav__input-label" for="toggle"><i class="fa fa-bars"></i><span class="visuallyhidden">link open mobile menu</span></label>
 		</nav>
 
 		<!-- HERO CONTAINER -->
@@ -64,9 +63,9 @@
 				<form action="#sendEmail.php" method="POST" class="main__form form" autocomplete="off" name="Form">
 					<div class="main__form--top
 					main">
-						<label class="visuallyhidden" for="name">Please submit name to comment</label>
+						<label class="main__form-label visuallyhidden" for="name">Please submit name to comment</label>
 						<input class="main__form--top--input" type="name" placeholder="Name" id="name">
-						<label class="visuallyhidden" for="email">Please enter email to comment</label>
+						<label class="main__form-label visuallyhidden" for="email">Please enter email to comment</label>
 						<input type="email" class="main__form--top--input" name="email" required id="email" placeholder="Email address">
 					</div>
 					<div class="main__form main__form--bottom">
@@ -100,12 +99,12 @@
 					<a class="aside__heading--contact content-heading" href="mailto:info@email.com">info@email.com</a>
 					<a class="aside__text--contact copy-text" href="tel:1234567890" >123 - 456 - 7890</a>
 
-					<!-- BAD USE OF UL CLEAN THIS EVENTUALLY -->
+					<!-- USED TO <A> OUR UL TO MAKE THINGS A COLUMN CORRECT LATER -->
 					<a href="https://goo.gl/maps/VJ4njSPUvJU2" target="_blank" class="aside__text--contact copy-text">
-						<ul class="aside__list-fav">
-							<li>123 Queen Street West, Unit 10</li>
-							<li>Toronto, Ontario</li>
-						 	<li>M5V2D5</li>
+						<ul class="aside__list-address">
+							<li class="aside__address-item">123 Queen Street West, Unit 10</li>
+							<li class="aside__address-item">Toronto, Ontario</li>
+						 	<li class="aside__address-item">M5V2D5</li>
 						</ul>
 					</a>
 				</div>
