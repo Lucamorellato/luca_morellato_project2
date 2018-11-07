@@ -30,11 +30,12 @@ $secondary-font:  'Cabin', sans-serif;
 }
 
 .section-heading {
-	@include heading-text(42);
+  @include heading-text(42);
+  
 }
 
 .content-heading {
-	@include heading-text(32)
+  @include heading-text(32)
 }
 
 
@@ -79,8 +80,11 @@ $secondary-font:  'Cabin', sans-serif;
   .copy-text {
     font-size: 1.8rem;
   }
-
-
+}
+@media only screen and (max-width: 768px) {
+  .section-heading {
+    @include heading-text(38);
+  }
 }
 
 

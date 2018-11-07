@@ -42,3 +42,55 @@
         }
     }
 } 
+
+// MOBILE NAV STYLES
+
+.mobile-nav {
+    position: relative;
+    margin: 0 auto;
+
+
+    &__list{
+        background: darken($white, 10);
+        padding: 0; 
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: -10;
+        width: 100%;
+        right: 2000px; 
+        height: 100vh;
+        margin: 0;
+        transition: all 0.3s;
+        @media screen and (max-width: 768px) {
+            z-index: 1;
+        }
+    }
+    &__link {
+        display: block;
+        padding: 30px 50px;
+        transition: all 0.3s;
+    }
+    &__input[type="checkbox"] {
+	    display: none;  
+    }
+    &__input[type="checkbox"]:checked + &__list {
+        right: 0;
+    }
+    &__input-label[for="toggle"] {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            font-size: 3rem;
+            position: relative;
+            color: $black;
+            padding: 25px 50%;
+            z-index: 10;
+        }
+    }
+    &__input[type="checkbox"]:checked ~ &__input-label[for="toggle"] {
+        position: fixed;
+    }
+}

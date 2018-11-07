@@ -92,7 +92,7 @@
         // padding: 25px 0;
     }
     &__heading {
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
         font-weight: normal;
         text-transform: lowercase;
@@ -102,9 +102,9 @@
     }
     &__span {
         color: $black;
-        font-size: 10rem;
+        font-size: 11.5rem;
         display: block;
-        padding: 30px 0 70px 0;
+        padding: 40px 0 70px 0;
         text-shadow: 1px 1px $button-color, 2px 2px $button-color, 3px 3px $button-color, 4px 4px $button-color, 5px 5px $black, 6px 6px $black;
         @media screen and (max-width: 420px) {
             padding: 20px 0 70px 0;
