@@ -73,7 +73,7 @@
 	&__anchor{
 		transition: color .2s;
 		&:hover {
-			color: $accent1;
+			color: $main-color;
 		}
 		&.fas {
 			margin-right: 25px;
@@ -262,8 +262,8 @@
 		margin: 0;
 	}
 
-    &__img {
-        width: calc(33.3% - 20px);
+    &__img-container {
+		width: calc((100% / 3) - 20px);
 		margin-right: 20px;
 		@media screen and (max-width: 768px) {
 			float: left;

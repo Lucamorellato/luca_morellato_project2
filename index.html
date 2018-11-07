@@ -23,7 +23,7 @@
 					<a href="index.html" class="nav__link nav__link--active">Home</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">About</a>
+					<a href="#story" class="nav__link">About</a>
 				</li>
 				<li class="nav__item">
 					<h2 class="nav__item nav__item--title content-heading">Harper</h2>
@@ -37,8 +37,8 @@
 			</ul>
 			<input class="mobile-nav__input" type="checkbox" id="toggle" name="toggle">
 			<ul class="mobile-nav__list">
-				<li><a class="mobile-nav__link content-heading" href="#home">Home</a></li>
-				<li><a class="mobile-nav__link content-heading" href="#about">About</a></li>
+				<li><a class="mobile-nav__link content-heading" href="index.html">Home</a></li>
+				<li><a class="mobile-nav__link content-heading" href="#">About</a></li>
 				<li><a class="mobile-nav__link content-heading" href="blog.html">Blog</a></li>
 				<li><a class="mobile-nav__link content-heading" href="contact.html">Contact</a></li>
 			</ul>
@@ -69,36 +69,40 @@
 				<div class="bio__content">
 					<h2 class="bio__heading section-heading">Who's Harper?</h2>
 					<p class="bio__text copy-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tenetur fugit unde nostrum saepe Lorem ipsum dolor sit amet. suscipit iure quibusdam iusto facere sit? lada doreama setu</p>
-					<a class="bio__link btn" href="#">Find out more</a>
+					<a class="bio__link btn" href="#story">Find out more</a>
 				</div>
 			</div>
 			<div class="bio__banner"></div>
 		</section>
+
+		<!-- LINK SECTION -->
 		<section class="links">
 			<div class="wrapper">
 				<ul class="links__list">
 					<li class="links__item">
-						<a class="links__anchor content-heading" href="#"><i class="fas fa-image icon"></i>Photos</a>
+						<a class="links__anchor content-heading" href="#gallery"><i class="fas fa-image icon"></i>Photos</a>
 						<p class="links__text copy-text">Ut Felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
 						sem. sit amet imperdiet dolor placerat et.</p>
 					</li>
 					<li class="links__item">
-						<a class="links__anchor content-heading" href="#"><i class="fas fa-user"></i>About</a>
+						<a class="links__anchor content-heading" href="#story"><i class="fas fa-user"></i>About</a>
 						<p class="links__text copy-text">Ut Felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem. sit amet imperdiet dolor placerat et.</p>
 					</li>
 					<li class="links__item">
-						<a class="links__anchor content-heading" href="#"><i class="fas fa-desktop"></i>Blog</a>
+						<a class="links__anchor content-heading" href="blog.html"><i class="fas fa-desktop"></i>Blog</a>
 						<p class="links__text copy-text">Ut Felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
 						sem. sit amet imperdiet dolor placerat et.</p>
 					</li>
 					<li class="links__item">
-						<a class="links__anchor content-heading" href="#"><i class="fas fa-phone"></i></i>Contact Me</a>
+						<a class="links__anchor content-heading" href="contact.html"><i class="fas fa-phone"></i></i>Contact Me</a>
 						<p class="links__text copy-text">Ut Felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
 						sem. sit amet imperdiet dolor placerat et.</p>
 					</li>
 				</ul>
 			</div>
 		</section>
+
+		<!-- TILES SECTION -->
 		<section class="tiles">
 			<div class="wrapper">
 				<div class="tiles__container tiles__container--upper">
@@ -125,7 +129,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="story">
+
+		<!-- STORY SECTION -->
+		<section class="story" id="story">
 			<div class="story__wrapper wrapper">
 				<div class="story__container">
 					<img class="story__img img" src="assets/home-image-5.jpg" alt="a photo of Harper wearing a floral-print dress">
@@ -139,11 +145,18 @@
 		</section>
 
 		<!-- GALLERY SECTION -->
-		<section class="gallery">
+		<section class="gallery" id="gallery">
 			<div class="gallery__container  gallery__wrapper wrapper clearfix">
-				<img src="assets/home-image-6.jpg" alt="the corner of a tropical pink building viewed from below with a clear blue sky shining above." class="gallery__img">
-				<img src="assets/home-image-7.jpg" alt="a commercial jet plane flying through swirling pink and blue clouds" class="gallery__img">
-				<img src="assets/home-image-8.jpg" alt="pink clouds swirling psychedelically through a blue sky" class="gallery__img">
+				<div class="gallery__img-container">
+					<img class="gallery__img img"src="assets/home-image-6.jpg" alt="the corner of a tropical pink building viewed from below with a clear blue sky shining above." 
+				class="gallery__img img">
+				</div>
+				<div class="gallery__img-container">
+					<img class="gallery__img img"src="assets/home-image-7.jpg" alt="a commercial jet plane flying through swirling pink and blue clouds">
+				</div>
+				<div class="gallery__img-container">
+					<img class="gallery__img img" src="assets/home-image-8.jpg" alt="pink clouds swirling psychedelically through a blue sky">
+				</div>
 			</div>
 		</section>
 	</main>

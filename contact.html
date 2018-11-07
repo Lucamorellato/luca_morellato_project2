@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="assets/Favicon.png" type="image/x-icon" />
+    <link rel="icon" href="assets/Favicon.png" type="image/x-icon"/>
 </head>
 <body>
 	<!-- START OF HEADER -->
 	<header class="header">
+
+		<!-- NAV BAR -->
 		<nav class="header__nav nav">
 			<ul class=nav__list>
 				<li class="nav__item">
@@ -32,6 +33,8 @@
 					<a href="contact.html" class="nav__link nav__link--active">Contact</a>
 				</li>
 			</ul>
+
+			<!-- MOBILE NAV -->
 			<input class="mobile-nav__input" type="checkbox" id="toggle" name="toggle">
 			<ul class="mobile-nav__list">
 				<li><a class="mobile-nav__link content-heading" href="index.html">Home</a></li>
@@ -39,16 +42,19 @@
 				<li><a class="mobile-nav__link content-heading" href="blog.html">Blog</a></li>
 				<li><a class="mobile-nav__link content-heading" href="contact.html">Contact</a></li>
 			</ul>
-			<label class="mobile-nav__input-label" for="toggle"><i class="fa fa-bars"></i><span class="visuallyhidden">link open mobile menu</span></label>
+			<label class="mobile-nav__input-label" for="toggle"><i class="fa fa-bars"></i><span class="visuallyhidden">link open
+					mobile menu</span></label>
 		</nav>
+
+		<!-- HERO CONTAINER -->
 		<div class="header__hero header__hero--alternate">
 			<h2 class="header__text section-heading">Contact</h2>
 		</div>
 	</header>
 		<!-- END OF HEADER -->
-	<main class="blog-contact__main">
 
-		<!-- wrapper -->
+		<!-- START OF MAIN -->
+	<main class="blog-contact__main">
 		<div class="wrapper wrapper--secondary main--secondary">
 
 			<!-- MAIN COLUMN/SECTION -->
@@ -74,6 +80,8 @@
 
 			<!-- SIDEBAR STARTS -->
 			<aside class="main__aside">
+
+				<!-- CONTACT SECTION -->
 				<div class="aside__contact">
 					<ul class="aside__list--contact">
 						<li class="aside__list-item">
@@ -91,14 +99,18 @@
 					</ul>
 					<a class="aside__heading--contact content-heading" href="mailto:info@email.com">info@email.com</a>
 					<a class="aside__text--contact copy-text" href="tel:1234567890" >123 - 456 - 7890</a>
+
+					<!-- BAD USE OF UL CLEAN THIS EVENTUALLY -->
 					<a href="https://goo.gl/maps/VJ4njSPUvJU2" target="_blank" class="aside__text--contact copy-text">
-						<ul>
+						<ul class="aside__list-fav">
 							<li>123 Queen Street West, Unit 10</li>
 							<li>Toronto, Ontario</li>
-						 <li>M5V2D5</li>
+						 	<li>M5V2D5</li>
 						</ul>
 					</a>
 				</div>
+
+				<!-- MOBILE CONTACT SECTION -->
 				<div class="aside__contact--mobile">
 					<ul class="aside__list--mobile">
 						<li class="aside__list-item">
@@ -126,9 +138,6 @@
 				</div>
 			</aside>
 		</div>
-	</main>
-
-
 	</main>
 </body>
 

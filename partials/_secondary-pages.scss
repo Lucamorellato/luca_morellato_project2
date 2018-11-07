@@ -59,7 +59,8 @@
         display: flex;
         flex-direction: column;
         flex: 1 2 200px;
-        margin-right: 50px;
+		margin-right: 50px;
+		// @media
     }
     &__comment {
         display: flex;
@@ -136,7 +137,7 @@
         &--input {
             height: 75px;
             padding-left: 20px;
-            width: 48%;
+			width: 48%;
         }
     }
     &--top1 {
@@ -145,7 +146,10 @@
     &--bottom {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+		justify-content: center;
+		.btn {
+			padding: 20px 45%;
+		}
     }
     input {
         border: none;
@@ -167,24 +171,26 @@
 
 // CONTACT PAGE SPECIFIC STYES
 
+
 .aside {
 
     &__list--contact {
-        display: flex;
-    }
+		display: flex;
+		// padding: 50px;
+	}
     &__list-item {
         margin-right: 20px;
     }
     &__contact {
         background: white;
-		  padding: 30px;
-		  display: flex;
-		  flex-direction: column;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
     }
     &__heading--contact {
         font-size: 2.2rem;
-		  text-transform: lowercase;
-		  padding: 10px 0;
+		text-transform: lowercase;
+		padding: 10px 0;
     }
     &__text--contact {
         font-size: 1.7rem;
@@ -233,10 +239,7 @@
 
 	.main__aside {
 		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin-right: 0;
+		display: block;
 	}
 
 	.blog-contact__main {
@@ -244,33 +247,44 @@
 	}
 
 	.aside {
+		display: flex;
+		flex-direction: row;
 		
 		&__about-harper {
 			display: flex;
 			flex-direction: column;
-			width: 50%;
+			width: 60%;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			margin-top: 50px;
+			margin: 25px auto;
 		}
 		&__list {
 			display: flex;
-			width: 45%;
+			width: 60%;
 			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 25px;
+			margin: 25px auto;
 		}
 		&__contact {
 			width: 100%;
-			margin-bottom: 50px;
+			margin-bottom: 100px;
 			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
 			align-items: center;
-			li {
-				display: flex;
-				justify-content: center;
+			// Safari Fix
+			a {
+				text-align: center;
 			}
+		}
+		&__heading {
+			text-align: center;
+		}
+		&__list-item {	
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
 		}
 	}
 
@@ -358,6 +372,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			margin: 50px 0;
 		}
 	}
 	.article__heading {

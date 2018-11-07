@@ -187,7 +187,8 @@ template {
   overflow: hidden; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-size: 2rem; }
@@ -352,9 +353,9 @@ a {
   .mobile-nav__link {
     display: block;
     padding: 30px 50px;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .mobile-nav__input[type="checkbox"] {
     display: none; }
   .mobile-nav__input[type="checkbox"]:checked + .mobile-nav__list {
@@ -369,7 +370,7 @@ a {
         font-size: 3rem;
         position: relative;
         color: #171717;
-        padding: 25px 50%;
+        padding: 25px 25px;
         z-index: 10; } }
   .mobile-nav__input[type="checkbox"]:checked ~ .mobile-nav__input-label[for="toggle"] {
     position: fixed; }
@@ -388,7 +389,10 @@ a {
       .main-header__wrapper {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; } }
     @media screen and (max-width: 768px) {
       .main-header__wrapper {
         -webkit-box-pack: center;
@@ -419,7 +423,8 @@ a {
     @media screen and (max-width: 980px) {
       .main-header__hero-text {
         font-size: 9.6rem;
-        margin: 0 0 0 50px; } }
+        margin: 0 0 0 50px;
+        padding-top: 150px; } }
     @media screen and (max-width: 768px) {
       .main-header__hero-text {
         display: none; } }
@@ -572,7 +577,7 @@ a {
     -o-transition: color .2s;
     transition: color .2s; }
     .links__anchor:hover {
-      color: #68b0c1; }
+      color: #b9dde7; }
     .links__anchor.fas {
       margin-right: 25px; }
   .links .fas {
@@ -794,24 +799,24 @@ a {
   @media screen and (max-width: 768px) {
     .gallery {
       margin: 0; } }
-  .gallery__img {
-    width: calc(33.3% - 20px);
+  .gallery__img-container {
+    width: calc((100% / 3) - 20px);
     margin-right: 20px; }
     @media screen and (max-width: 768px) {
-      .gallery__img {
+      .gallery__img-container {
         float: left;
         margin: 0;
         width: 50%; } }
     @media screen and (max-width: 550px) {
-      .gallery__img {
+      .gallery__img-container {
         float: none;
         width: 100%;
         padding: 0 10px 10px 10px;
         display: block; } }
-    .gallery__img:last-of-type {
+    .gallery__img-container:last-of-type {
       margin-right: 0; }
       @media screen and (max-width: 768px) {
-        .gallery__img:last-of-type {
+        .gallery__img-container:last-of-type {
           display: none;
           padding: 20px; } }
   .gallery__container {
@@ -984,6 +989,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  .main__form--bottom .btn {
+    padding: 20px 45%; }
 
 .main__form input {
   border: none; }
@@ -1061,68 +1068,75 @@ a {
     padding: 50px 0 0 0; }
   .main__aside {
     width: 100%;
+    display: block; }
+  .blog-contact__main {
+    padding-top: 100px; }
+  .aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-right: 0; }
-  .blog-contact__main {
-    padding-top: 100px; }
-  .aside__about-harper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 50%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px; }
-  .aside__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 45%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 25px; }
-  .aside__contact {
-    width: 100%;
-    margin-bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .aside__contact li {
+    flex-direction: row; }
+    .aside__about-harper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 60%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      margin: 25px auto; }
+    .aside__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 60%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin: 25px auto; }
+    .aside__contact {
+      width: 100%;
+      margin-bottom: 100px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .aside__contact a {
+        text-align: center; }
+    .aside__heading {
+      text-align: center; }
+    .aside__list-item {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .main__aside {
@@ -1194,6 +1208,7 @@ a {
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    margin: 50px 0; }
   .article__heading {
     font-size: 3.5rem; } }

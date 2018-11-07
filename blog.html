@@ -5,12 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Blog</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Cabin|Oswald:700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="assets/Favicon.png" type="image/x-icon" />
 </head>
 <body>
 	<header class="header">
+
+		<!-- NAV BAR -->
 		<nav class="header__nav nav">
 			<ul class=nav__list>
 				<li class="nav__item">
@@ -29,6 +33,8 @@
 					<a href="contact.html" class="nav__link">Contact</a>
 				</li>
 			</ul>
+
+			<!-- MOBILE NAV -->
 			<input class="mobile-nav__input" type="checkbox" id="toggle" name="toggle">
 			<ul class="mobile-nav__list">
 				<li><a class="mobile-nav__link content-heading" href="index.html">Home</a></li>
@@ -38,6 +44,8 @@
 			</ul>
 			<label class="mobile-nav__input-label" for="toggle"><i class="fa fa-bars"></i><span class="visuallyhidden">link open mobile menu</span></label>
 		</nav>
+
+		<!-- HERO CONTAINER -->
 		<div class="header__hero">
 			<h2 class="header__text section-heading">Blog</h2>
 		</div>
@@ -52,6 +60,8 @@
 
 			<!-- MAIN COLUMN/SECTION -->
 			<section class="main__content">
+
+				<!-- BLOG POST -->
 				<article class="main__article">
 					<h1 class="article__heading section-heading">My favourite travel destinations</h1>
 					<p class="article__content copy-text">Monday October 8th, 2018 by Harper</p>
@@ -97,7 +107,7 @@
 					<div class="main__form main__form--bottom">
 						<label class="visuallyhidden" for="comment">Please enter comment</label>
 						<textarea class="" id="comment" name="comment" placeholder="Comment" class="""></textarea>
-						<button class="main__form--bottom btn">Post comment</button>
+						<button class="main__form--bottom btn"> comment</button>
 					</div>
 				</form>
 			</section>
@@ -105,12 +115,16 @@
 
 			<!-- SIDEBAR STARTS -->
 			<aside class="main__aside">
+
+				<!-- ABOUT HARPER -->
 				<div class="aside__about-harper">
 					<img class="aside__about-harper--img img" src="assets/blog-image-2.jpg" alt="a photo of a blogger with brown hair and a bob-cut">
 					<h3 class="aside__heading content-heading">About Harper</h3>
 					<p class="aside__text copy-text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quibusdam omnis neque, quaerat obcaecati quidem. <a href="#" class="aside__text--link">Find out more.</a></p>
 				</div>
+
+				<!-- RECENT POSTS -->
 				<div class="aside__list">
 					<h3 class="aside__heading content-heading">Recent posts</h3>
 					<ul class="aside__ul copy-text">
@@ -122,7 +136,6 @@
 				</div>
 			</aside>	
 			<!-- END OF SIDEBAR -->
-
 		</div>
 	</main>
 	<!-- END OF MAIN -->
@@ -130,7 +143,6 @@
 	<!-- FOOTER STARTS -->
 	<footer class="footer">
 		<p class="footer__text copy-text">Copyright &copy;2018 HackerYou</p>
-	</footer>
-    
+	</footer> 
 </body>
 </html>
